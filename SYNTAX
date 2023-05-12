@@ -1,3 +1,7 @@
 # CREATE DATABASE 
 This syntax is use to create new DATABASE in which we will create new tables. 
 SYNTAX - "CREATE DATABASE 'data base name'; (end with semi colon because of it is complete statement) 
+
+# DROP DATABASE 
+The DROP DATABASE statement is used to drop an existing SQL database.
+Sytax  = "DROP DATABASE databasename;"
