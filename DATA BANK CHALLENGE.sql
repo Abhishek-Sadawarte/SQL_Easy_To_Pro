@@ -9408,4 +9408,9 @@ VALUES
   ('189', '2020-02-06', 'purchase', '393'),
   ('189', '2020-01-22', 'deposit', '302'),
   ('189', '2020-01-27', 'withdrawal', '861');
-
+  
+ #Now we have creted out database
+ #Now we try to solve challenge questions 
+ 1. How many unique nodes are there on the Data Bank system?
+ sol - select count(Distinct node_id) as unique nodes 
+       from customer_nodes 
