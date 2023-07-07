@@ -37,4 +37,32 @@ where ename like 'M%'
 select ename from emp
 where ename like '%N'
 
-###
+### display name of employees whose name contains M in anywhere in pos
+select ename from emp 
+where ename like '%M%'; 
+
+### display name of employees whose name does not contain M anywhere 
+seelct ename from emp
+where ename not like '%M%'
+
+
+### Pattern Matching Queries 
+# Display names of all employees whose name contains exactly four letters 
+select ename from emp 
+where ename like '____';
+
+# Display the names of employees whose name contains the (i) Second letter as 'L' (ii) fourth letter as 'M'
+select ename from emp 
+where ename like '_L%';
+
+select ename from emp 
+where ename like '___M';
+
+### We want exactly two LL
+select ename from emp 
+where ename like '%LL%; 
+
+### diplay names start with J and End with S 
+
+select ename from emp 
+wher ename like 'J%S';
