@@ -66,3 +66,16 @@ where ename like '%LL%;
 
 select ename from emp 
 wher ename like 'J%S';
+
+### Display nth row of display table 
+### ROWNUM will not work with Equal to and greater than sign 
+select * from emp 
+where rownum<= 4 
+minus 
+select * from emp 
+where rownum <= 3 
+
+
+select * from 
+(select rownum r, ename, sal from emp )
+where r = 4 
