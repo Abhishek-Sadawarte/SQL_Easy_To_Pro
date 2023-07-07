@@ -24,3 +24,17 @@ Table 3 contains customer transactions
 ![WhatsApp Image 2023-05-13 at 01 28 06](https://github.com/j0kr97/SQL_Easy_To_Pro/assets/109215374/206c3658-0825-48a7-ab1b-8e610a269ca7)
 
 **We Will Adress some of challenge questions with descriptions of queries**
+
+
+### findig second highest salary 
+select max(sal) from emp where sal not in (select max(sal) from emp)
+
+### display name of employees whose first name is name 
+select ename from emp 
+where ename like 'M%'
+
+### display name of employees whose name ends with N
+select ename from emp
+where ename like '%N'
+
+###
