@@ -79,3 +79,5 @@ where rownum <= 3
 select * from 
 (select rownum r, ename, sal from emp )
 where r = 4 
+
+### query the list of CITY names from Station which have vowels (a,e,i,o,u) as both their first and last characters. Result can not contain duplicates 

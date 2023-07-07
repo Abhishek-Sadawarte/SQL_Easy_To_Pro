@@ -9414,3 +9414,11 @@ VALUES
  1. How many unique nodes are there on the Data Bank system?
  sol - select count(Distinct node_id) as unique nodes 
        from customer_nodes 
+
+
+'''query the list of CITY names from Station which have vowels (a,e,i,o,u) as both their first and last characters. 
+Result can not contain duplicates'''
+
+select city from station where city REGEXP '^[ariouAEIOU],*[aeiouAEIOU]$'
+
+
